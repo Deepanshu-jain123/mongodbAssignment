@@ -1,0 +1,8 @@
+assignmentdb> db.teacher.update({name:"priyanshu Jain"},{$set:{experience: 2}},{upsert:true});
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 0,
+  upsertedCount: 0
+}

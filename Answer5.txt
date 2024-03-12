@@ -1,0 +1,18 @@
+
+assignmentdb> db.Customers.find({amount:{$gt:550}});
+[
+  {
+    _id: ObjectId("65e95bb7e57a766e8c7e36e2"),
+    name: 'Ram',
+    address: '464/104 Suman vihar jaat colony MOZ',
+    customerId: 'Id124ABD',
+    amount: 600
+  },
+  {
+    _id: ObjectId("65e95bdee57a766e8c7e36e3"),
+    name: 'Krishna',
+    address: '464/105 Suman vihar jaat colony MOZ',
+    customerId: 'Id125ABE',
+    amount: 700
+  }
+]

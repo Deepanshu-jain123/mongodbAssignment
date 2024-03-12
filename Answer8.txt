@@ -1,0 +1,48 @@
+
+SchoolDB> user;
+{ name: 'Himanshu Jain', age: 26, grade: 'C' }
+SchoolDB> db.student.insertOne(user);
+{
+  acknowledged: true,
+  insertedId: ObjectId("65e9c8dc59b0e22a9970987e")
+}
+SchoolDB> var user = { name: "Priyanshu Jain", age: 26, grade: "A" }
+
+SchoolDB> user;
+{ name: 'Priyanshu Jain', age: 26, grade: 'A' }
+SchoolDB> db.student.insertOne(user);
+{
+  acknowledged: true,
+  insertedId: ObjectId("65e9c90559b0e22a9970987f")
+}
+SchoolDB> var user = { name: "Deepanshu Jain", age: 22, grade: "B" }
+
+SchoolDB> user;
+{ name: 'Deepanshu Jain', age: 22, grade: 'B' }
+SchoolDB> db.student.insertOne(user);
+{
+  acknowledged: true,
+  insertedId: ObjectId("65e9c91459b0e22a99709880")
+}
+SchoolDB> db.student.find();
+[
+  {
+    _id: ObjectId("65e9c8dc59b0e22a9970987e"),
+    name: 'Himanshu Jain',
+    age: 26,
+    grade: 'C'
+  },
+  {
+    _id: ObjectId("65e9c90559b0e22a9970987f"),
+    name: 'Priyanshu Jain',
+    age: 26,
+    grade: 'A'
+  },
+  {
+    _id: ObjectId("65e9c91459b0e22a99709880"),
+    name: 'Deepanshu Jain',
+    age: 22,
+    grade: 'B'
+  }
+]
+SchoolDB>

@@ -1,0 +1,22 @@
+ use PWSKILLS
+switched to db PWSKILLS
+PWSKILLS> show collections;
+Employees
+PWSKILLS> db.Employees.find();
+
+PWSKILLS> var user={
+... Employee : "Rohit Jain"
+... }
+
+PWSKILLS> db.Employees.insertOne(user);
+{
+  acknowledged: true,
+  insertedId: ObjectId("65ef5ab5211c18fd248be041")
+}
+PWSKILLS> db.Employees.find();
+[
+  { _id: ObjectId("65ef5ab5211c18fd248be041"), Employee: 'Rohit Jain' }
+]
+
+PWSKILLS> db.PWSKILLS.drop();
+true

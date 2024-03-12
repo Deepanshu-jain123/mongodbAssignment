@@ -1,0 +1,9 @@
+assignmentdb> db.Customers.update({name:'Ram'},{$set:{address:"464/103 Suman Vihar Jaat Colony MOZ"}},{upsert:true})
+DeprecationWarning: Collection.update() is deprecated. Use updateOne, updateMany, or bulkWrite.
+{
+  acknowledged: true,
+  insertedId: ObjectId("65e963153d36b7dee1871a44"),
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 1
+}

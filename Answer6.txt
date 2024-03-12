@@ -1,0 +1,2 @@
+assignmentdb> db.Customers.deleteOne({name:'Ram'});
+{ acknowledged: true, deletedCount: 1 }

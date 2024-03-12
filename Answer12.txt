@@ -1,0 +1,20 @@
+assignmentdb> db.teacher.find({$or:[{subject: "DBMS"},{experience:{$gt:1}}]})
+[
+  {
+    _id: ObjectId("65ef46be211c18fd248be03e"),
+    name: 'Deepanshu Jain',
+    subject: 'Data Structure',
+    experience: 3
+  },
+  {
+    _id: ObjectId("65ef46ef211c18fd248be03f"),
+    name: 'priyanshu Jain',
+    subject: 'DBMS',
+    experience: 2
+  },
+  {
+    _id: ObjectId("65ef57443d36b7dee18734a1"),
+    name: 'Priyanshu Jain',
+    experience: 2
+  }
+]

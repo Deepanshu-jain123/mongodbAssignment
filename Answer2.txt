@@ -1,0 +1,15 @@
+assignmentdb>  db.Customers.insertOne({name:"Rahul Rai",address:"Muzaffaranagar",customerId:"Id123ABC"});
+{
+  acknowledged: true,
+  insertedId: ObjectId("65e95b0de57a766e8c7e36e1")
+}
+assignmentdb>  db.Customers.insertOne({name:"Ram",address:"464/104 Suman vihar jaat colony MOZ",customerId:"Id124ABD"});
+{
+  acknowledged: true,
+  insertedId: ObjectId("65e95bb7e57a766e8c7e36e2")
+}
+assignmentdb>  db.Customers.insertOne({name:"Krishna",address:"464/105 Suman vihar jaat colony MOZ",customerId:"Id125ABE"});
+{
+  acknowledged: true,
+  insertedId: ObjectId("65e95bdee57a766e8c7e36e3")
+}

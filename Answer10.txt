@@ -1,0 +1,31 @@
+
+SchoolDB> db.student.update({name:'Himanshu Jain'},{$set:{grade:'A'}},{upsert:true});
+DeprecationWarning: Collection.update() is deprecated. Use updateOne, updateMany, or bulkWrite.
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+SchoolDB> db.student.find();
+[
+  {
+    _id: ObjectId("65e9c8dc59b0e22a9970987e"),
+    name: 'Himanshu Jain',
+    age: 26,
+    grade: 'A'
+  },
+  {
+    _id: ObjectId("65e9c90559b0e22a9970987f"),
+    name: 'Priyanshu Jain',
+    age: 26,
+    grade: 'A'
+  },
+  {
+    _id: ObjectId("65e9c91459b0e22a99709880"),
+    name: 'Deepanshu Jain',
+    age: 22,
+    grade: 'B'
+  }
+]

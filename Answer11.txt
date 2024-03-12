@@ -1,0 +1,36 @@
+ var user = {
+... name : "Deepanshu Jain",
+... subject : "Data Structure",
+... experience : " 2 year"
+... }
+
+assignmentdb> user;
+{
+  name: 'Deepanshu Jain',
+  subject: 'Data Structure',
+  experience: ' 2 year'
+}
+assignmentdb> db.teacher.insertOne(user);
+
+{
+  acknowledged: true,
+  insertedId: ObjectId("65ef46be211c18fd248be03e")
+}
+assignmentdb> var user = { name: "priyanshu Jain", subject: "DBMS", experience: " 3 year" }
+
+assignmentdb> user;
+{ name: 'priyanshu Jain', subject: 'DBMS', experience: ' 3 year' }
+assignmentdb> db.teacher.insertOne(user);
+{
+  acknowledged: true,
+  insertedId: ObjectId("65ef46ef211c18fd248be03f")
+}
+assignmentdb> var user = { name: "Himanshu Jain", subject: "Python", experience: " 4 year" }
+
+assignmentdb> user;
+{ name: 'Himanshu Jain', subject: 'Python', experience: ' 4 year' }
+assignmentdb> db.teacher.insertOne(user);
+{
+  acknowledged: true,
+  insertedId: ObjectId("65ef4724211c18fd248be040")
+}
